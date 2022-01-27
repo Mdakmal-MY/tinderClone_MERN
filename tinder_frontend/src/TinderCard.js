@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import './TinderCard.css';
 import TinderCards from 'react-tinder-card';
+import './TinderCard.css';
 
 function TinderCard() {
-    const [people, setPeople] = useState([
+    const [people] = useState([
         {
             name: 'Elon Musk',
-            url: 'https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg'
+            url: 'https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg',
         },
         {
             name: 'Jeff Besof',
-            url: 'https://en.wikipedia.org/wiki/Jeff_Bezos#/media/File:Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_(39074799225)_(cropped).jpg'
-        }
+            url: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg',
+        },
 
     ]);
 
@@ -28,13 +28,12 @@ function TinderCard() {
             <div className='TinderCard__cardContainer'>
             {people.map((person) => (
                     <TinderCards
-                    className="swipe"
+                    className='swipe'
                     key={person.name}
-                    preventSwipe={["up", "down"]}
+                    preventSwipe={['up', 'down']}
                     onSwipe={(dir) => swiped(dir, person.name)}
                     onCardLeftScreen={() => outOfFrame(person.name)}
-                    >
-                    </TinderCards>
+                    >{person.url}</TinderCards>
                 ))}
             </div>
         </div>
