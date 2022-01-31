@@ -33,7 +33,11 @@ function TinderCard() {
                     preventSwipe={['up', 'down']}
                     onSwipe={(dir) => swiped(dir, person.name)}
                     onCardLeftScreen={() => outOfFrame(person.name)}
-                    >{person.url}</TinderCards>
+                    >
+                    <div style={{backgroundImage:'url('+person.url+')'}} className='card'>
+                        <h3>{person.name}</h3>
+                    </div>
+                    </TinderCards>
                 ))}
             </div>
         </div>
