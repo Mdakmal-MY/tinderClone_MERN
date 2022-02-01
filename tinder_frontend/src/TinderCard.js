@@ -9,7 +9,7 @@ function TinderCard() {
             url: 'https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg',
         },
         {
-            name: 'Jeff Besof',
+            name: 'Jeff Bezos',
             url: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg',
         },
 
