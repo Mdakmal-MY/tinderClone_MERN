@@ -12,7 +12,7 @@ function Header() {
                 <PersonIcon fontSize="large" className="header__icon"/>
             </IconButton>
             <img className="header__logo"
-            src = {TinderImage}/>
+            src = {TinderImage} alt="tinderLogo"/>
             <IconButton>
                 <ForumIcon fontSize="large" className="header__icon"/>
             </IconButton>
