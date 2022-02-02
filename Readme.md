@@ -2,6 +2,6 @@
 
 all the image are from wikipedia
 
-<center>
-    <img src="frontend_screenshot" />
-</center>
+<p align = "center">
+    <img src="frontend_screenshot.png" />
+</p>
